@@ -7,5 +7,5 @@ viewCvBtn.addEventListener('click', () => {
 // Button for contacting via email
 const contactMeBtn = document.getElementById('contactMeBtn');
 contactMeBtn.addEventListener('click', () => {
-    window.location.href = 'mailto:bhavyansh.jain@example.com?subject=Contacting%20You&body=Hello%20Bhavyansh,';
+    window.location.href = 'mailto:bhavyansh.bj@gmail.com?subject=Contacting%20You&body=Hello%20Bhavyansh,';
 });
