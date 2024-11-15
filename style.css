@@ -17,7 +17,7 @@ header nav {
     color: #b25629;
     font-size: 18px;
     text-decoration: none;
-    font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .menu-icon {
@@ -46,7 +46,7 @@ header nav {
 
 /* Welcome Text */
 .welcome-text {
-    padding-top: 400px;
+    padding-top: 340px;
     width: 100%;
     height: auto;
     white-space: nowrap;
@@ -69,7 +69,7 @@ header nav {
     font-family: 'Space Grotesk', sans-serif;
     color: #ffffff;
     font-size: 20px; /* Responsive size */
-    letter-spacing: 1.6em;
+    letter-spacing: 1.7em;
     text-transform: uppercase;
     line-height: 1.1;
     text-align: center;
@@ -97,13 +97,14 @@ header nav {
     font-style: normal;
     font-size: 40px;
     letter-spacing: 0em;
+    padding-left: 37px;
     line-height: 1.1;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translateX(15%);
     color: #1a1a1a;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .skills-grid {
@@ -132,7 +133,9 @@ header nav {
 /* Skills Section */
 .skills {
     background-color: #ff8c42;
-    padding: 60px 20px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
 }
 
 .skills h2 {
@@ -148,7 +151,21 @@ header nav {
 }
 
 .projects h2 {
-    text-align: center;
+    font-family: 'Oi', sans-serif;
+    width: 1000px;
+    height: auto;
+    white-space: pre;
+    z-index: 1;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0em;
+    line-height: 1.1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-left: 330px;
+    color: white;
     margin-bottom: 30px;
 }
 
@@ -200,6 +217,7 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 40px;
     transform: translateX(15%);
     color: white;
     margin-bottom: 40px;
@@ -250,8 +268,14 @@ footer {
 /* Contact Section */
 .contact {
     background-color: #001624;
-    padding: 20px;
     text-align: center;
+}
+
+.contact h2 {
+    font-family: "Dokdo", system-ui;
+    font-weight: 300;      
+    font-style: normal;
+    font-size: 90px;
 }
 
 /* Heart Icon */
@@ -267,7 +291,7 @@ footer {
 /* General Button Styles */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 5px;
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -297,7 +321,7 @@ h2 {
     background-color: #001624; /* Dark background */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
 }
@@ -332,7 +356,6 @@ h2 {
 
 .footer-para {
     font-family: 'Space Grotesk', sans-serif;
-    padding-top: 140px;
     font-size: 15px;
     color: snow;
     letter-spacing: 0.2em;
