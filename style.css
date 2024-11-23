@@ -1,15 +1,22 @@
+/* General Body Styles */
 body {
     background-color: #ffecd1;
     color: #333;
     font-family: 'Courier New', Courier, monospace;
+    animation: fadeIn 1.5s ease-in-out;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header Styles */
 header nav {
     display: flex;
-    background-color: #ffecd1;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffecd1;
     padding: 20px;
 }
 
@@ -18,6 +25,7 @@ header nav {
     font-size: 18px;
     text-decoration: none;
     font-family: "Space Grotesk", sans-serif;
+    margin: 0 10px;
 }
 
 .menu-icon {
@@ -35,7 +43,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Center content vertically */
+    height: 80vh;
     text-align: center;
 }
 
@@ -44,9 +52,8 @@ header nav {
     margin: auto;
 }
 
-/* Welcome Text */
 .welcome-text {
-    padding-top: 340px;
+    padding-top: 350px;
     width: 100%;
     height: auto;
     white-space: nowrap;
@@ -78,69 +85,48 @@ header nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 /* Tech Virtuoso Palette */
 .tech-palette {
     background-color: #ff7f11;
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .tech-title {
     font-family: 'Oi', sans-serif;
-    width: 1000px;
-    height: auto;
-    white-space: pre;
     z-index: 1;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 0em;
-    padding-left: 37px;
     line-height: 1.1;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(15%);
     color: #1a1a1a;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .skill h3 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
     color: #1a1a1a;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .skill p {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: #1a1a1a;
     line-height: 1.4;
-}
-
-/* Skills Section */
-.skills {
-    background-color: #ff8c42;
-    display: flex;
-    justify-content: left;
-    text-align: left;
-}
-
-.skills h2 {
-    color: #fff;
-    margin-bottom: 30px;
 }
 
 /* Projects Showcase */
@@ -152,9 +138,6 @@ header nav {
 
 .projects h2 {
     font-family: 'Oi', sans-serif;
-    width: 1000px;
-    height: auto;
-    white-space: pre;
     z-index: 1;
     font-weight: 400;
     font-style: normal;
@@ -162,9 +145,8 @@ header nav {
     letter-spacing: 0em;
     line-height: 1.1;
     display: flex;
-    align-items: left;
-    justify-content: left;
-    padding-left: 330px;
+    align-items: center;
+    justify-content: center;
     color: white;
     margin-bottom: 30px;
 }
@@ -177,7 +159,7 @@ header nav {
 
 .project-card {
     background-color: #282a36;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
 }
@@ -196,76 +178,40 @@ header nav {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Boggled Minds Section */
-.boggled-minds {
-    background-color: #001624;
-    padding: 60px 20px;
-    color: #fff;
-}
-
-.boggled-minds h2 {
-    font-family: 'Oi', sans-serif;
-    width: 1000px;
-    height: auto;
-    white-space: pre;
-    z-index: 1;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    letter-spacing: 0em;
-    line-height: 1.1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 40px;
-    transform: translateX(15%);
-    color: white;
-    margin-bottom: 40px;
-}
-
-.questions-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.question {
-    background-color: transparent;
-    color: #fff;
-    padding: 20px;
-    text-align:center;
-}
-
-.question h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-}
-
-.question p {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
-}
-
 /* Footer */
 footer {
     background-color: #001624;
     color: #fff;
-    padding: 20px;
     text-align: center;
-}
-
-.social-icons a {
-    color: #ff8c42;
-    margin: 0 10px;
+    padding: 20px;
 }
 
 .footer-year {
-    font-size: 3rem;
-    color: #ff8c42;
-    margin-top: 20px;
+    font-size: 60px;
+    font-family: 'Oi', cursive;
+    color: #ffffff;
 }
 
 /* Contact Section */
+.contact {
+    background-color: #001624;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: "Dokdo", system-ui;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.heart {
+    background-color: #001624;
+    display: block;
+    margin: 0 auto;
+    height: 132.89px;
+    width: 132.89px;
+}
+
 .contact {
     background-color: #001624;
     text-align: center;
@@ -277,18 +223,6 @@ footer {
     font-style: normal;
     font-size: 90px;
 }
-
-/* Heart Icon */
-.heart {
-    background-color: #001624;
-    padding: 20px;
-    display: block;
-    margin: 0 auto;
-    height: 132.89px;
-    width: 132.89px;
-}
-
-/* General Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 5px;
@@ -365,4 +299,65 @@ h2 {
     font-size: 260px;
     font-family: 'Oi', cursive;
     color: #ffffff;
+}
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-text {
+        font-size: 80px;
+        padding-top: 150px;
+    }
+
+    .subtext {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .menu-icon {
+        margin-bottom: 10px;
+    }
+
+    .welcome-text {
+        font-size: 60px;
+        padding-top: 100px;
+    }
+
+    .subtext {
+        font-size: 14px;
+    }
+
+    .tech-title {
+        font-size: 25px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .footer-year {
+        font-size: 40px;
+    }
+
+    .contact h2 {
+        font-size: 40px;
+    }
 }
